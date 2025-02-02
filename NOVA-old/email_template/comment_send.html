@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .email-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .email-body {
+            margin-bottom: 20px;
+        }
+        .email-body p {
+            margin-bottom: 15px;
+        }
+        .email-footer {
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-title">叮~评论提醒</div>
+        <div class="email-body">
+            <p>尊敬的$$author$$用户您好，</p>
+            <p>$$time$$，用户$$commenter$$在您的文档“$$doc_title$$”下发表了新的评论：</p>
+            <p><strong>评论正文：</strong></p>
+            <p>$$content$$</p>
+        </div>
+        <div class="email-footer">
+            <p>祝好，</p>
+            <p>$$sender$$</p>
+        </div>
+    </div>
+</body>
+</html>
