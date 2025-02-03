@@ -1,10 +1,9 @@
-import random
 import json
 import re
 
 from LLMAgent import LLMAgent
 from Memory import History
-from Prompt import BasePrompt, CharacterPrompt, GameFlowPrompt
+from Prompt import BasePrompt, CharacterPrompt, GameFlowPrompt, AssistantPrompt
 
 class Player:
     def __init__(self, num):
@@ -45,13 +44,15 @@ class LLMPlayer(Player):
         self.agent = LLMAgent()
         self.assistant = LLMAgent()
 
+
     def getCard(self, card):
         super().getCard(card)
         self.memory.set(CharacterPrompt.characters[card])
 
     def think(self, prompt):
         prompt = self.memory.get() + [{'role':'user', 'content': prompt}]
-        return self.agent.chat(prompt)
+        answer = self.agent.chat(prompt)
+        return self.reflect(prompt, answer)
 
     def vote(self, choices):
         prompt = self.memory.get() + [
@@ -70,7 +71,8 @@ class LLMPlayer(Player):
     
     def speak(self):
         prompt = self.memory.get() + [{'role':'user', 'content': GameFlowPrompt.DiscussionPrompt}]
-        return self.agent.chat(prompt)
+        answer = self.agent.chat(prompt)
+        return self.reflect(prompt, answer)
     
     def memorize(self, messages, set_memory=False):
         if set_memory:
@@ -80,10 +82,42 @@ class LLMPlayer(Player):
             for message in messages:
                 self.memory.add(message)
 
-    def reflect(self):
-        memory = self.memory.get()
-        message = self.assistant.chat(memory)
-        self.memory.add(message, do_memory=True)
+    def reflect(self, question, answer):
+        def clean_str(str):
+            str = str.replace("```json", "").replace("```", "").strip()
+            str = re.sub(r'\n', '', str)
+            str = re.sub(r'\t', '', str)
+            return re.findall(r"{.*?}", str, re.DOTALL)[0]
+
+        reflect_times = 0
+        while True:
+            try:
+                response = self.assistant.chat([{
+                    'role': 'system', 
+                    'content': AssistantPrompt.ReflectionPrompt.format(card=self.card, background=question, answer=answer)
+                }])
+            except Exception as e:
+                print(reflect_times)
+                print(response)
+                raise e
+            
+            reflect_times += 1
+            try:
+                response = clean_str(response)
+                reflect = json.loads(response)
+            except json.JSONDecodeError as e:
+                print(response)
+                print(e)
+                raise e
+            if reflect_times > 3 or reflect['score'] > 8:
+                return answer
+            else:
+                answer = self.agent.chat([{
+                    'role': 'user',
+                    'content': AssistantPrompt.ReAnswerPrompt.format(
+                    card=self.card, background=question, answer=answer, 
+                    mistakes=reflect['mistakes'], suggestions=reflect['suggestions']
+                )}])
 
     def info(self):
         return self.memory.get()
@@ -123,4 +157,3 @@ class HumanPlayer(Player):
     def info(self):
         pass
 
-    

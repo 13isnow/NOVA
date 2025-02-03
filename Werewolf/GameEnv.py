@@ -4,6 +4,7 @@ from Record import Logger
 from Player import LLMPlayer, HumanPlayer
 from Rules import WereWolfRules
 from Memory import History
+from Commender import Commenter
 
 class Env:
     def __init__(self):
@@ -40,7 +41,6 @@ class Env:
         return self.GameRules.check(self.wolf_num, self.priesthood_num, self.villager_num)
     
     def update(self, victim):
-        self.day += 1
         victim.die()
 
         if victim in self.wolves:
@@ -51,6 +51,9 @@ class Env:
             self.villager_num -= 1
         
         self.over, self.winner = self.checkGameover()
+    
+    def newday(self):
+        self.day += 1
 
     def validPlayers(self):
         return [player.num for player in self.players if player.isAlive()]
@@ -65,6 +68,7 @@ class WereWolfGame:
         self.env = Env()
         self.state = None
         self.logger = Logger()
+        self.commenter = Commenter()
 
         self.WolfKill = WereWolfRules.get('wolf')
         self.PriestAction = WereWolfRules.get('priest')
@@ -105,9 +109,13 @@ class WereWolfGame:
     def updateState(self, victim):
         self.env.update(victim)
 
-    def infoState(self):
-        # print(json.dumps(self.state, ensure_ascii=False, indent=8))
-        pass
+    def updateTime(self):
+        self.env.newday()
+
+    def BroadcastState(self, messages, set_memory=False):
+        for player in self.players:
+            if player.isAlive():
+                player.memorize(messages, set_memory=set_memory)
 
     def info(self, message):
         self.logger.log(message)
@@ -122,13 +130,14 @@ class WereWolfGame:
         votes = self.WolfKill.kill(self.wolves, self.vaildplayers)
         victim = self.players[self.VoteJudge.judge(votes)]
         self.info(f"Wolf kill Player {victim.num}")
-        for player in self.players:
-            player.memorize([f"Wolf kill Player {victim.num}"])
         self.updateState(victim)
         print("Wolves, Close Your Eyes")
+        self.infosep('-')
+        print("Priest, Open Your Eyes") 
+        self.PriestAction.act(self.priesthoods, self.vaildplayers, self.players)
+        print("Priest, Close Your Eyes")
 
-        # print("Priest, Open Your Eyes") 
-        # self.PriestAction.act(self.priesthoods)
+        self.BroadcastState([f"Wolf kill Player {victim.num}"])
 
     def DiscussionRound(self):
         print("Discussion Start")
@@ -139,8 +148,7 @@ class WereWolfGame:
                 discussion.append(f"Player {player.num}: {message}")
                 self.info(f"Player {player.num}: {message}")
                 self.infosep('-')
-        for player in self.players:
-            player.memorize(discussion)
+        self.BroadcastState(discussion)
 
     def VoteRound(self):
         print("Vote Start")
@@ -153,26 +161,35 @@ class WereWolfGame:
 
         victim = self.players[self.VoteJudge.judge(votes)]
         self.info(f"Player {victim.num} is voted out")
+        self.BroadcastState([f"Player {victim.num} is voted out"])
         self.updateState(victim)
 
     def run(self):
-        for player in self.players:
-            player.memorize([f"游戏开始，共有{len(self.players)}名玩家, 玩家编号分别是{list(range(len(self.players)))}，请大家隐藏好身份，实现角色目标，取得胜利"], set_memory=True)
+        self.BroadcastState([f"游戏开始，共有{len(self.players)}名玩家, 玩家编号分别是{list(range(len(self.players)))}，请大家隐藏好身份，实现角色目标，取得胜利"],
+                            set_memory=True)
+        try:
+            while not self.gameover:
+                self.info(f"Day {self.day}")
+                print("Night Start, Close Your Eyes")
+                self.NightRound()
+                self.infosep('=')
+                print("Day Start, Open Your Eyes")
+                self.DiscussionRound()
+                self.infosep('=')
+                self.VoteRound()
+                self.infosep('#')
+                self.updateTime()
             
-        while not self.gameover:
-            self.infoState()
-            self.info(f"Day {self.day}")
-            print("Night Start, Close Your Eyes")
-            self.NightRound()
-            self.infosep('=')
-            print("Day Start, Open Your Eyes")
-            self.DiscussionRound()
-            self.infosep('=')
-            self.VoteRound()
+            self.info(f"Game Over, Winner is {self.gameWinner}")
+            WereWolfRules.get('end').end(self.gameWinner)
             self.infosep('#')
-        
-        self.info(f"Game Over, Winner is {self.gameWinner}")
-        self.logger.logend()
+            comment = self.commenter.comment('\n'.join(self.logger.logfile))
+            self.info(comment)
+            self.logger.logend()
+        except Exception as e:
+            self.logger.log(f'Error: {e}')
+            self.logger.logend()
+            raise e
 
     @property
     def day(self):

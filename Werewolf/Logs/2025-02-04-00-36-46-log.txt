@@ -1,0 +1,10 @@
+Game Start
+Player Number: 5
+##############################
+Player 0 get villager
+Player 1 get villager
+Player 2 get wolf
+Player 3 get prophet
+Player 4 get villager
+##############################
+Day 1

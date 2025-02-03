@@ -16,7 +16,7 @@ class WereWolfRules:
         if rule == 'wolf':
             return WolfRules()
         if rule == 'priest':
-            return PriestRules()
+            return PriestRules(*args)
         if rule == 'vote':
             return VoteRules()
         return None
@@ -56,24 +56,36 @@ class WolfRules:
         votes = []
         discussion = []
         for wolf in wolves:
-            discussion.append(f'Wolf {wolf.num}:' + wolf.think(GameFlowPrompt.WolfKillPrompt + f"现阶段剩余的人有{vaildplayers}"))
+            if wolf.isAlive():
+                discussion.append(f'Wolf {wolf.num}:' + wolf.think(GameFlowPrompt.WolfKillPrompt + f"现阶段剩余的人有{vaildplayers}"))
 
         for wolf in wolves:
-            wolf.memorize(discussion)
+            if wolf.isAlive():
+                wolf.memorize(discussion)
 
         for wolf in wolves:
-            votes.append(wolf.vote(vaildplayers))
+            if wolf.isAlive():
+                votes.append(wolf.vote(vaildplayers))
 
         return votes
 
 class PriestRules:
     def __init__(self):
         pass
-    def act(self, prompt):
-        pass
 
+    def act(self, priesthoods, vaildplayers, players):
+        for priest in priesthoods:
+            if priest.isAlive():
+                if priest.card == 'prophet':
+                    message = f'Prophet {priest.num}:' + priest.think(GameFlowPrompt.WolfKillPrompt + f"现阶段剩余的人有{vaildplayers}")
+                    priest.memorize(message)
+                    vote = priest.vote(vaildplayers)
+                    prophecy = players[vote]
+                    priest.memorize(f'Prophet Found Player {prophecy.num} is {prophecy.card}')
+                    
 class VoteRules:
     def __init__(self):
         pass
     def judge(self, votes):
         return max(set(votes), key=votes.count)
+    

@@ -1,4 +1,5 @@
 from LLMAgent import LLMAgent
+from Prompt import AssistantPrompt
 
 class History:
     def __init__(self, lenlimit=20):
@@ -16,13 +17,16 @@ class History:
         self.len = 0
 
     def summarize(self):
-        pass
-
-    def add(self, message, do_memory=False):
+        history = '##\n\n##'.join([item['content'] for item in self.shortHistory])
+        prompt = [{"role": "system", "content": AssistantPrompt.SummaryPrompt + history}]
+        response = self.assistant.chat(prompt)
+        self.longHistory.append({"role": "system", "content": response})
+        
+    def add(self, message, do_summarize=False):
         self.shortHistory.append({"role": "user", "content": message})
         self.len += 1
 
-        if self.len > self.lenlimit or do_memory:
+        if self.len > self.lenlimit or do_summarize:
             self.summarize()
             self.reset()
 
