@@ -57,7 +57,8 @@ class WolfRules:
         discussion = []
         for wolf in wolves:
             if wolf.isAlive():
-                discussion.append(f'Wolf {wolf.num}:' + wolf.think(GameFlowPrompt.WolfKillPrompt + f"现阶段剩余的人有{vaildplayers}"))
+                thought = wolf.think(f"现阶段剩余的人有{vaildplayers}" + GameFlowPrompt.WolfKillPrompt)
+                discussion.append(f'Wolf {wolf.num}:' + thought)
 
         for wolf in wolves:
             if wolf.isAlive():
@@ -77,11 +78,12 @@ class PriestRules:
         for priest in priesthoods:
             if priest.isAlive():
                 if priest.card == 'prophet':
-                    message = f'Prophet {priest.num}:' + priest.think(GameFlowPrompt.WolfKillPrompt + f"现阶段剩余的人有{vaildplayers}")
-                    priest.memorize(message)
+                    thought = priest.think(f"现阶段剩余的人有{vaildplayers}" + GameFlowPrompt.ProphesyPrompt)
+                    message = f'Prophet {priest.num}:' + thought
+                    priest.memorize([message])
                     vote = priest.vote(vaildplayers)
                     prophecy = players[vote]
-                    priest.memorize(f'Prophet Found Player {prophecy.num} is {prophecy.card}')
+                    priest.memorize([f'Prophet Found Player {prophecy.num} is {prophecy.card}'])
                     
 class VoteRules:
     def __init__(self):

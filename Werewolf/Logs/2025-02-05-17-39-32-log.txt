@@ -1,0 +1,12 @@
+Game Start
+Player Number: 5
+##############################
+Player 0 get prophet
+Player 1 get villager
+Player 2 get villager
+Player 3 get villager
+Player 4 get wolf
+##############################
+Day 1
+##############################
+Error: can only concatenate str (not "coroutine") to str

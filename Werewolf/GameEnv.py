@@ -137,7 +137,7 @@ class WereWolfGame:
         self.PriestAction.act(self.priesthoods, self.vaildplayers, self.players)
         print("Priest, Close Your Eyes")
 
-        self.BroadcastState([f"Wolf kill Player {victim.num}"])
+        self.BroadcastState([f"Wolf kill Player {victim.num}, Player {victim.num} is out of game"])
 
     def DiscussionRound(self):
         print("Discussion Start")
@@ -160,6 +160,9 @@ class WereWolfGame:
                 votes.append(player_num)
 
         victim = self.players[self.VoteJudge.judge(votes)]
+        if not victim.isAlive:
+            raise Exception(f"Player {victim.num} is already dead")
+        
         self.info(f"Player {victim.num} is voted out")
         self.BroadcastState([f"Player {victim.num} is voted out"])
         self.updateState(victim)
@@ -181,13 +184,15 @@ class WereWolfGame:
                 self.updateTime()
             
             self.info(f"Game Over, Winner is {self.gameWinner}")
-            WereWolfRules.get('end').end(self.gameWinner)
             self.infosep('#')
             comment = self.commenter.comment('\n'.join(self.logger.logfile))
             self.info(comment)
             self.logger.logend()
         except Exception as e:
+            self.infosep('#')
             self.logger.log(f'Error: {e}')
+            comment = self.commenter.comment('\n'.join(self.logger.logfile))
+            self.info(comment)
             self.logger.logend()
             raise e
 

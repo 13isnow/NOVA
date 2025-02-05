@@ -1,5 +1,7 @@
 import re
 
+import asyncio
+import concurrent.futures
 from ollama import Client
 
 class LLMAgent:
@@ -15,6 +17,7 @@ class LLMAgent:
         messages = self.prompt + messages
         response = self.agent.chat(model=self.model, messages=messages)
         return re.sub(r'<think>.*?</think>', '', response["message"]["content"], flags=re.DOTALL)
+
 
 if __name__ == "__main__":
     agent = LLMAgent()

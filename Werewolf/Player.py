@@ -52,7 +52,7 @@ class LLMPlayer(Player):
     def think(self, prompt):
         prompt = self.memory.get() + [{'role':'user', 'content': prompt}]
         answer = self.agent.chat(prompt)
-        return self.reflect(prompt, answer)
+        return answer
 
     def vote(self, choices):
         prompt = self.memory.get() + [
@@ -89,35 +89,40 @@ class LLMPlayer(Player):
             str = re.sub(r'\t', '', str)
             return re.findall(r"{.*?}", str, re.DOTALL)[0]
 
-        reflect_times = 0
-        while True:
-            try:
-                response = self.assistant.chat([{
-                    'role': 'system', 
-                    'content': AssistantPrompt.ReflectionPrompt.format(card=self.card, background=question, answer=answer)
-                }])
-            except Exception as e:
-                print(reflect_times)
-                print(response)
-                raise e
-            
-            reflect_times += 1
-            try:
-                response = clean_str(response)
-                reflect = json.loads(response)
-            except json.JSONDecodeError as e:
-                print(response)
-                print(e)
-                raise e
-            if reflect_times > 3 or reflect['score'] > 8:
-                return answer
-            else:
-                answer = self.agent.chat([{
-                    'role': 'user',
-                    'content': AssistantPrompt.ReAnswerPrompt.format(
-                    card=self.card, background=question, answer=answer, 
-                    mistakes=reflect['mistakes'], suggestions=reflect['suggestions']
-                )}])
+        try:
+            response = self.assistant.chat([{
+                'role': 'system', 
+                'content': AssistantPrompt.ReflectionPrompt.format(card=self.card, background=question, answer=answer)
+            }])
+        except Exception as e:
+            print(response)
+            raise e
+        
+        try:
+            response = clean_str(response)
+            reflect = json.loads(response)
+        except json.JSONDecodeError as e:
+            print(response)
+            print(e)
+            raise e
+        
+        if reflect['score'] < 8:
+            keys = self.assistant.chat([{
+                'role': 'system',
+                'content': AssistantPrompt.SummaryPrompt
+            },{
+                'role': 'user',
+                'content': answer
+            }
+            ])
+            answer = self.agent.chat([{
+                'role': 'user',
+                'content': AssistantPrompt.ReAnswerPrompt.format(
+                num=self.num, card=self.card, background=question, keys=keys, 
+                mistakes=reflect['mistakes'], suggestions=reflect['suggestions']
+            )}])
+        
+        return answer
 
     def info(self):
         return self.memory.get()
