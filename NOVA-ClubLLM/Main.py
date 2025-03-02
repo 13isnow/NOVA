@@ -7,8 +7,7 @@ from RAG import build_rag_chain
 DOC_DIR = os.path.join(os.path.dirname(__file__), "Yuque")
 
 def DocLoad():
-    # token = input('input your token: ')
-    token = 'sezlx7jnrr66IxweCelbFueNIkNrD3arAdPeFReD'
+    token = input('input your token: ')
     yuque = YuqueBase(token, DOC_DIR)
     user_name = ['阮一海']
     yuque.get_userDoc(user_name)
