@@ -1,0 +1,2 @@
+Log.logger  : INFO     Connected to Milvus server: http://localhost:19530
+Log.logger  : INFO     Connected to Graph: e:\study\projects\NOVA-ClubLLM\RAG\graph_data

@@ -1,0 +1,308 @@
+2025-03-01 21:50:32,513 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-01 21:50:32,513 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-01 21:50:32,514 - lightrag - INFO - Load KV full_docs with 0 data
+2025-03-01 21:50:32,514 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-03-01 21:54:03,966 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-01 21:54:03,967 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-01 21:54:03,967 - lightrag - INFO - Load KV full_docs with 0 data
+2025-03-01 21:54:03,967 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-03-01 21:54:04,004 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 21:54:11,236 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 21:54:11,237 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 21:54:12,228 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 21:56:17,743 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-01 21:56:17,745 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-01 21:56:17,747 - lightrag - INFO - Load KV full_docs with 0 data
+2025-03-01 21:56:17,748 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-03-01 21:56:17,783 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 0 nodes, 0 edges
+2025-03-01 21:56:17,847 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 21:56:19,017 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 21:56:19,018 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 21:56:19,288 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 21:59:09,066 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-01 21:59:09,067 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-01 21:59:09,068 - lightrag - INFO - Load KV full_docs with 0 data
+2025-03-01 21:59:09,069 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-03-01 21:59:09,070 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 0 nodes, 0 edges
+2025-03-01 21:59:09,083 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 21:59:09,300 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 21:59:09,300 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 21:59:13,185 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 21:59:13,245 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:06:16,744 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-01 22:06:16,745 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-01 22:06:16,746 - lightrag - INFO - Load KV full_docs with 0 data
+2025-03-01 22:06:16,746 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-03-01 22:06:16,749 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 0 nodes, 0 edges
+2025-03-01 22:06:16,768 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:06:16,999 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:06:16,999 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:06:18,175 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:06:18,232 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:09:00,652 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-01 22:09:00,653 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-01 22:09:00,653 - lightrag - INFO - Load KV full_docs with 0 data
+2025-03-01 22:09:00,654 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-03-01 22:09:00,655 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 0 nodes, 0 edges
+2025-03-01 22:09:00,668 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:09:00,888 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:09:00,888 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:09:01,261 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:09:30,404 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:09:30,405 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:09:30,405 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:09:30,405 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:09:30,432 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:09:30,452 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:09:30,460 - lightrag - INFO - [New Chunks] inserting 9 chunks
+2025-03-01 22:09:30,460 - lightrag - INFO - Inserting 9 vectors to chunks
+2025-03-01 22:09:31,047 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:10:41,494 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:10:41,495 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:10:41,495 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:10:41,495 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:10:41,498 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:10:41,523 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:10:41,525 - lightrag - INFO - [New Chunks] inserting 2 chunks
+2025-03-01 22:10:41,525 - lightrag - INFO - Inserting 2 vectors to chunks
+2025-03-01 22:10:41,652 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:11:06,586 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:11:06,587 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:11:06,588 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:11:06,588 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:11:06,591 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:11:06,599 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:11:06,600 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:11:06,601 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:11:06,673 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:11:26,162 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:11:26,163 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:11:26,163 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:11:26,163 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:11:26,167 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:11:26,171 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:11:26,173 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:11:26,174 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:11:26,239 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:11:46,766 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:11:46,767 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:11:46,768 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:11:46,769 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:11:46,772 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:11:46,799 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:11:46,800 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:11:46,801 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:11:46,852 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:12:01,670 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:12:01,671 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:12:01,673 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:12:01,673 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:12:01,676 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:12:01,684 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:12:01,689 - lightrag - INFO - [New Chunks] inserting 2 chunks
+2025-03-01 22:12:01,689 - lightrag - INFO - Inserting 2 vectors to chunks
+2025-03-01 22:12:01,818 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:12:24,275 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:12:24,275 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:12:24,276 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:12:24,276 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:12:24,282 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:12:24,311 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:12:24,313 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:12:24,313 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:12:24,384 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:12:41,221 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:12:41,221 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:12:41,222 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:12:41,222 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:12:41,225 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:12:41,258 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:12:41,261 - lightrag - INFO - [New Chunks] inserting 3 chunks
+2025-03-01 22:12:41,261 - lightrag - INFO - Inserting 3 vectors to chunks
+2025-03-01 22:12:41,457 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:13:25,491 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:13:25,492 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:13:25,492 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:13:25,493 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:13:25,496 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:13:25,510 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:13:25,512 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:13:25,512 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:13:25,591 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:13:47,991 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:13:47,992 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:13:47,993 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:13:47,993 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:13:47,996 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:13:48,007 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:13:48,009 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:13:48,009 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:13:48,074 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:13:53,997 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:13:53,998 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:13:53,999 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:13:53,999 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:13:54,003 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-03-01 22:13:54,010 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:13:54,011 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:13:54,011 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:13:54,060 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:14:14,786 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:14:14,788 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:14:14,788 - lightrag - INFO - Inserting 10 vectors to entities
+2025-03-01 22:14:15,046 - lightrag - INFO - Inserting 3 vectors to relationships
+2025-03-01 22:14:15,152 - lightrag - INFO - Writing graph with 10 nodes, 3 edges
+2025-03-01 22:14:15,154 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:14:15,155 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:14:15,155 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:14:15,207 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:14:45,625 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:14:45,626 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:14:45,627 - lightrag - INFO - Inserting 6 vectors to entities
+2025-03-01 22:14:45,778 - lightrag - INFO - Inserting 4 vectors to relationships
+2025-03-01 22:14:45,905 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:14:45,939 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:14:45,941 - lightrag - INFO - [New Chunks] inserting 2 chunks
+2025-03-01 22:14:45,941 - lightrag - INFO - Inserting 2 vectors to chunks
+2025-03-01 22:14:46,073 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:15:11,241 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:15:11,241 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:15:11,241 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:15:11,241 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:15:11,270 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:15:11,275 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:15:11,277 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:15:11,277 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:15:11,327 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:15:33,032 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:15:33,032 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:15:33,033 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:15:33,033 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:15:33,040 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:15:33,049 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:15:33,051 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:15:33,051 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:15:33,128 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:15:51,382 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:15:51,383 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:15:51,383 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:15:51,383 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:15:51,389 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:15:51,402 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:15:51,404 - lightrag - INFO - [New Chunks] inserting 2 chunks
+2025-03-01 22:15:51,405 - lightrag - INFO - Inserting 2 vectors to chunks
+2025-03-01 22:15:51,553 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:16:21,176 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:16:21,177 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:16:21,178 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:16:21,178 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:16:21,183 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:16:21,210 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:16:21,212 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:16:21,212 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:16:21,284 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:16:36,254 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:16:36,254 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:16:36,254 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:16:36,254 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:16:36,261 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:16:36,267 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:16:36,269 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:16:36,269 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:16:36,338 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:16:55,375 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:16:55,376 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:16:55,376 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:16:55,376 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:16:55,381 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:16:55,395 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:16:55,398 - lightrag - INFO - [New Chunks] inserting 2 chunks
+2025-03-01 22:16:55,398 - lightrag - INFO - Inserting 2 vectors to chunks
+2025-03-01 22:16:55,533 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:17:18,935 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:17:18,938 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:17:18,941 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:17:18,942 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:17:18,979 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:17:19,020 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:17:19,042 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:17:19,043 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:17:19,281 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:17:40,928 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:17:40,932 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:17:40,936 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:17:40,939 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:17:40,976 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:17:41,020 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:17:41,027 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:17:41,028 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:17:41,221 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:18:03,282 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:18:03,286 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:18:03,305 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:18:03,306 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:18:03,346 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:18:03,424 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:18:03,434 - lightrag - INFO - [New Chunks] inserting 2 chunks
+2025-03-01 22:18:03,435 - lightrag - INFO - Inserting 2 vectors to chunks
+2025-03-01 22:18:03,702 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:18:28,348 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:18:28,349 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:18:28,350 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:18:28,350 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:18:28,355 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:18:28,366 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:18:28,369 - lightrag - INFO - [New Chunks] inserting 1 chunks
+2025-03-01 22:18:28,370 - lightrag - INFO - Inserting 1 vectors to chunks
+2025-03-01 22:18:28,422 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:18:45,332 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:18:45,332 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:18:45,333 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:18:45,333 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:18:45,338 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-01 22:18:45,356 - lightrag - INFO - [New Docs] inserting 1 docs
+2025-03-01 22:18:45,360 - lightrag - INFO - [New Chunks] inserting 2 chunks
+2025-03-01 22:18:45,360 - lightrag - INFO - Inserting 2 vectors to chunks
+2025-03-01 22:18:45,510 - lightrag - INFO - [Entity Extraction]...
+2025-03-01 22:19:30,591 - lightrag - INFO - Inserting entities into storage...
+2025-03-01 22:19:30,592 - lightrag - INFO - Inserting relationships into storage...
+2025-03-01 22:19:30,592 - lightrag - WARNING - Didn't extract any entities and relationships, maybe your LLM is not working
+2025-03-01 22:19:30,592 - lightrag - WARNING - No new entities and relationships found
+2025-03-01 22:19:30,598 - lightrag - INFO - Writing graph with 17 nodes, 7 edges
+2025-03-02 07:54:06,704 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-02 07:54:06,705 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-02 07:54:06,705 - lightrag - INFO - Load KV full_docs with 2 data
+2025-03-02 07:54:06,706 - lightrag - INFO - Load KV text_chunks with 2 data
+2025-03-02 07:54:06,709 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 17 nodes, 7 edges
+2025-03-02 08:10:24,144 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-02 08:10:24,145 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-02 08:10:24,146 - lightrag - INFO - Load KV full_docs with 2 data
+2025-03-02 08:10:24,146 - lightrag - INFO - Load KV text_chunks with 2 data
+2025-03-02 08:10:24,148 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 17 nodes, 7 edges
+2025-03-02 08:10:30,421 - lightrag - INFO - kw_prompt result:
+2025-03-02 08:10:31,505 - lightrag - INFO - Local query uses 16 entites, 7 relations, 2 text units
+2025-03-02 08:36:37,469 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-02 08:36:37,470 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-02 08:36:37,471 - lightrag - INFO - Load KV full_docs with 2 data
+2025-03-02 08:36:37,472 - lightrag - INFO - Load KV text_chunks with 2 data
+2025-03-02 08:36:37,474 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 17 nodes, 7 edges
+2025-03-02 08:36:43,418 - lightrag - INFO - kw_prompt result:
+2025-03-02 08:36:44,507 - lightrag - INFO - Local query uses 3 entites, 2 relations, 1 text units
+2025-03-02 08:52:25,898 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-02 08:52:25,902 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-02 08:52:25,903 - lightrag - INFO - Load KV full_docs with 2 data
+2025-03-02 08:52:25,904 - lightrag - INFO - Load KV text_chunks with 2 data
+2025-03-02 08:52:25,907 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 17 nodes, 7 edges
+2025-03-02 08:56:55,337 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-02 08:56:55,337 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-02 08:56:55,338 - lightrag - INFO - Load KV full_docs with 2 data
+2025-03-02 08:56:55,339 - lightrag - INFO - Load KV text_chunks with 2 data
+2025-03-02 08:56:55,341 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 17 nodes, 7 edges
+2025-03-02 09:01:04,705 - lightrag - INFO - Logger initialized for working directory: e:\study\projects\NOVA-ClubLLM\RAG\graph_data
+2025-03-02 09:01:04,709 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-03-02 09:01:04,716 - lightrag - INFO - Load KV full_docs with 2 data
+2025-03-02 09:01:04,717 - lightrag - INFO - Load KV text_chunks with 2 data
+2025-03-02 09:01:04,724 - lightrag - INFO - Loaded graph from e:\study\projects\NOVA-ClubLLM\RAG\graph_data\graph_chunk_entity_relation.graphml with 17 nodes, 7 edges
+2025-03-02 09:01:04,975 - lightrag - INFO - Creating a new event loop in main thread.
+2025-03-02 09:01:12,100 - lightrag - INFO - kw_prompt result:
+2025-03-02 09:01:12,104 - lightrag - WARNING - low_level_keywords is empty

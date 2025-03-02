@@ -1,0 +1,27 @@
+Log.logger  : INFO     Connected to Milvus server: http://localhost:19530
+Log.logger  : INFO     Processing 2023秋季学期索引文档-42250325.md
+Log.logger  : INFO     Processing AI-44503105.md
+Log.logger  : INFO     Processing jieba分词-44503105.md
+Log.logger  : INFO     Processing KMP算法-44503105.md
+Log.logger  : INFO     Processing NLP-自然语言处理-44503105.md
+Log.logger  : INFO     Processing recommend list-44503105.md
+Log.logger  : INFO     Processing TF-IDF（1）-44503105.md
+Log.logger  : INFO     Processing TF-IDF（2）-44503105.md
+Log.logger  : INFO     Processing 一些内容-42250325.md
+Log.logger  : INFO     Processing 与AI的对话-42250325.md
+Log.logger  : INFO     Processing 分支任务2汇报文档-42250325.md
+Log.logger  : INFO     Processing 大作业体会-44503105.md
+Log.logger  : INFO     Processing 如何导入文档-44502413.md
+Log.logger  : INFO     Processing 宿舍分配建模-52408219.md
+Log.logger  : INFO     Processing 目录（先看我）-44503105.md
+Log.logger  : INFO     Processing 社团大作业分组2-44502413.md
+Log.logger  : INFO     Processing 索引匹配（1）-44503105.md
+Log.logger  : INFO     Processing 索引匹配（2）-44503105.md
+Log.logger  : INFO     Processing 认识索引算法-44503105.md
+Log.logger  : INFO     Processing 词向量的搭建（1）-44503105.md
+Log.logger  : INFO     Processing 词向量的搭建（2）-44503105.md
+Log.logger  : INFO     Processing 问卷建模梳理-52408219.md
+Log.logger  : INFO     Processing 问卷真实性保障-52408219.md
+Log.logger  : INFO     Processing 阮一海-42250325.md
+Log.logger  : INFO     Processing 阮一海-42253507.md
+Log.logger  : INFO     Connected to Milvus server: http://localhost:19530

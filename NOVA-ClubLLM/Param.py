@@ -1,0 +1,9 @@
+MILVUS_URI = "http://localhost:19530"
+COLLECTION_NAME = "Yuque_Docs"
+BATCH_SIZE = 50
+CHUNK_SIZE = 1024
+CHUNK_OVERLAP = 100
+EMBEDDING_MODEL = "BAAI/bge-base-zh-v1.5"
+EMBEDDING_DIM = 768
+
+GRAPHDIR = "graph_data"

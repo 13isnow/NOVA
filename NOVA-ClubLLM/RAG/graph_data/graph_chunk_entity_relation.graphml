@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;PROJECT&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"The project refers to a learning experience where the author tries to learn Python with PBL and AI assistance."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;RHG37Y&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Rhg37y is the author of a project, describing their experience with learning Python as a child who may not be familiar with the language."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;PYTHON&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Python refers to a programming language that the author has difficulty with as a child who may not be familiar with it."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;PBL&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"PBL (Problem-Based Learning) is a learning approach mentioned in the text, which the author finds challenging."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;THUAN YI HAI&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Thuan Yi Hai is another person mentioned in the text, possibly the author's classmate or peer."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;EXPERIENCE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The author has an experience with learning Python as a child who may not be familiar with the language."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;CLASSMATE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Thuan Yi Hai is mentioned as the author's classmate or peer, possibly someone who finds learning Python easier."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;BUG&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Bugs refer to errors or issues that the author may encounter while learning Python, which can be resolved using AI help."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;CHILD&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"The author describes themselves as a child when they were first introduced to Python, indicating their lack of familiarity with the language."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;AI&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"AI (Artificial Intelligence) refers to an intelligent computer system that can provide answers to bugs and questions."</data>
+      <data key="d2">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </node>
+    <node id="&quot;PUBLISH TIME: 2023-12-11T14:50:14.000Z&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"publish time: 2023-12-11T14:50:14.000Z is the event when the article was published."</data>
+      <data key="d2">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </node>
+    <node id="&quot;HACKERONE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"HackerOne is a bug bounty platform that enables organizations to collaborate with ethical hackers on vulnerability disclosure."</data>
+      <data key="d2">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </node>
+    <node id="&quot;LINUS&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Linus is a representative from HackerOne, involved in the bug bounty program launch and vulnerability disclosure process."</data>
+      <data key="d2">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </node>
+    <node id="&quot;阮一海&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"阮一海 is the author of this published article."</data>
+      <data key="d2">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </node>
+    <node id="&quot;VULNERABILITY DISCLOSURE&quot;">
+      <data key="d0">"CATEGORY"</data>
+      <data key="d1">"Vulnerability disclosure is the process of identifying, reporting, and mitigating software vulnerabilities, as part of the bug bounty program and cybersecurity efforts."</data>
+      <data key="d2">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </node>
+    <node id="&quot;BUG BOUNTY PROGRAM LAUNCH&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The bug bounty program launch event marks the beginning of a new vulnerability disclosure process, facilitated by HackerOne and yuque.com."</data>
+      <data key="d2">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </node>
+    <node id="&quot;YUQUE.COM&quot;">
+      <data key="d2">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+      <data key="d1">"The publish time event occurred on yuque.com, indicating the timing of the article's release."</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <edge source="&quot;RHG37Y&quot;" target="&quot;EXPERIENCE&quot;">
+      <data key="d3">3.0</data>
+      <data key="d4">"The author's experience with learning Python is a story about their challenges and struggles as a child who may not be familiar with the language.")</data>
+      <data key="d5">3</data>
+      <data key="d6">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </edge>
+    <edge source="&quot;RHG37Y&quot;" target="&quot;PBL&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Rhg37y's PBL ability is weak, which explains their inefficiency during the learning process."</data>
+      <data key="d5">"learning process, inefficiency"</data>
+      <data key="d6">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </edge>
+    <edge source="&quot;THUAN YI HAI&quot;" target="&quot;AI&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Thuan Yi Hai can ask AI for answers to bugs and questions, making it easier for them."("</data>
+      <data key="d5">"learning process, efficiency"</data>
+      <data key="d6">chunk-00949e94146e5d93f53fb682ccd6933b</data>
+    </edge>
+    <edge source="&quot;PUBLISH TIME: 2023-12-11T14:50:14.000Z&quot;" target="&quot;YUQUE.COM&quot;">
+      <data key="d3">18.0</data>
+      <data key="d4">"The publish time event occurred on yuque.com, indicating the timing of the article's release."</data>
+      <data key="d5">"timing, publication"</data>
+      <data key="d6">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </edge>
+    <edge source="&quot;HACKERONE&quot;" target="&quot;LINUS&quot;">
+      <data key="d3">10.0</data>
+      <data key="d4">"HackerOne is associated with representative Linus, involved in the bug bounty program launch and vulnerability disclosure process."</data>
+      <data key="d5">"representation, partnership"</data>
+      <data key="d6">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </edge>
+    <edge source="&quot;HACKERONE&quot;" target="&quot;BUG BOUNTY PROGRAM LAUNCH&quot;">
+      <data key="d3">11.0</data>
+      <data key="d4">"The bug bounty program launch event is facilitated by HackerOne, enabling organizations to collaborate with ethical hackers on vulnerability disclosure."</data>
+      <data key="d5">"initiation, partnership"</data>
+      <data key="d6">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </edge>
+    <edge source="&quot;阮一海&quot;" target="&quot;YUQUE.COM&quot;">
+      <data key="d3">16.0</data>
+      <data key="d4">"yuque.com is associated with author 阮一海, who published an article on this platform."</data>
+      <data key="d5">"authorship, publication"</data>
+      <data key="d6">chunk-07a4d0921bb17ba28da0be2b3d773b02</data>
+    </edge>
+  </graph>
+</graphml>

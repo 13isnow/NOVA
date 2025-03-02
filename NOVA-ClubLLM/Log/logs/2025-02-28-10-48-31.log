@@ -1,0 +1,4 @@
+__main__    : INFO     This is an info message
+__main__    : WARNING  This is a warning message
+__main__    : ERROR    This is an error message
+__main__    : CRITICAL This is a critical message
